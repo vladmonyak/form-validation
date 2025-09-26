@@ -1,0 +1,26 @@
+.segmented-button {
+  display: flex;
+  align-items: center;
+  padding: 2px;
+  border: var(--border);
+  border-radius: var(--border-radius-s);
+}
+
+.segmented-button__item {
+  flex: 1;
+  padding-block: 8px;
+  border: none;
+  border-radius: var(--border-radius-xs);
+  font-weight: 500;
+  color: var(--color-grey-400);
+  background-color: transparent;
+}
+
+.segmented-button__item:hover {
+  color: var(--color-primary);
+}
+
+.segmented-button__item--active {
+  color: var(--color-primary);
+  background-color: var(--color-grey-100);
+}

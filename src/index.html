@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="./styles/index.css">
+    <script type="module" src="./script.js"></script>
+  </head>
+  <body>
+    <h1 class="visually-hidden">User Registration Form</h1>
+    <form class="form" method="post" novalidate data-js-form>
+      <h2 class="form__title">Сreate an Account</h2>
+
+      <div class="form__segmented-button segmented-button" data-js-segmented-button>
+        <button 
+          class="segmented-button__item segmented-button__item--active" 
+          type="button"
+          data-js-segmented-button-email
+        >
+          Email
+        </button>
+        <button 
+          class="segmented-button__item" 
+          type="button"
+          data-js-segmented-button-phone
+        >
+          Mobile Number
+        </button>
+      </div>
+
+      <div class="form__fields">
+        <div class="form__field field" data-js-field-email>
+          <label class="field__label" for="email">Email</label>
+          <input 
+            class="field__input" 
+            id="email"
+            name="email" 
+            type="email" 
+            placeholder="Enter your email"
+            required
+            data-js-input-email
+          />
+          <p class="field__error" data-js-error-email></p>
+        </div>
+
+        <div class="form__field field visually-hidden" data-js-field-phone>
+          <label class="field__label" for="phone">Phone number</label>
+          <input 
+            class="field__input" 
+            id="phone"
+            name="phone" 
+            type="tel" 
+            placeholder="Enter your phone number"
+            required
+            data-js-input-phone
+          />
+          <p class="field__error" data-js-error-phone></p>
+        </div>
+
+        <div class="form__field field" data-js-field-password>
+          <label class="field__label" for="password">Password</label>
+          <div class="field__input-group">
+            <input 
+              class="field__input" 
+              id="password"
+              name="password" 
+              type="password" 
+              placeholder="Enter your password"
+              minlength="8"
+              required
+              data-js-input-password
+            />
+            <button 
+              class="field__password-toggle" 
+              type="button" 
+              aria-label="Show password"
+              title="Show password"
+              data-js-toggle-password
+            >
+              <img 
+                class="field__password-toggle-icon" 
+                src="./assets/icons/visibility-off.svg" 
+                alt=""
+                data-js-toggle-password-icon
+              />
+            </button>
+          </div>
+          <p class="field__error" data-js-error-password></p>
+        </div>
+
+        <div class="form__field field" data-js-field-confirm-password>
+          <label class="field__label" for="confirm-password">Confirm password</label>
+          <div class="field__input-group">
+            <input 
+              class="field__input" 
+              id="confirm-password"
+              name="confirm-password" 
+              type="password" 
+              placeholder="Re-enter your password"
+              minlength="8"
+              required
+              data-js-input-confirm-password
+            />
+            <button 
+              class="field__password-toggle" 
+              type="button" 
+              aria-label="Show password"
+              title="Show password"
+              data-js-toggle-confirm-password
+            >
+              <img 
+                class="field__password-toggle-icon" 
+                src="./assets/icons/visibility-off.svg" 
+                alt=""
+                data-js-toggle-confirm-password-icon
+              />
+            </button>
+          </div>
+          <p class="field__error" data-js-error-confirm-password></p>
+        </div>
+      </div>
+
+      <label class="form__agreement">
+        <input 
+          class="form__checkbox"
+          type="checkbox" 
+          checked 
+          required
+          data-js-checkbox
+        />
+        <span class="form__agreement-text">
+          By clicking “Sign Up”, you agree to our
+          <a class="form__link" href="/">Terms of Service</a> and
+          <a class="form__link" href="/">Privacy Policy</a>
+        </span>
+      </label>
+
+      <button 
+        class="form__button button" 
+        type="submit"
+        data-js-submit-button
+      >
+        Sign Up
+      </button>
+    </form>
+  </body>
+</html>

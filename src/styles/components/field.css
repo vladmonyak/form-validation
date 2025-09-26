@@ -1,0 +1,52 @@
+.field {
+  display: flex;
+  flex-direction: column;
+}
+
+.field__label {
+  margin-bottom: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  color: var(--color-primary);
+}
+
+.field__input-group {
+  position: relative;
+}
+
+.field__input {
+  width: 100%;
+  height: var(--input-height);
+  padding: 14px;
+  border: var(--border);
+  border-radius: var(--border-radius-s);
+  color: var(--color-primary);
+}
+
+.field__input-group:has(.field__password-toggle) 
+  .field__input {
+  padding-right: 52px;
+}
+
+.field__input:hover {
+  border-color: var(--color-grey-300);
+}
+
+.field__input:focus {
+  border-color: var(--color-primary);
+}
+
+.field__input::placeholder {
+  color: var(--color-grey-400);
+}
+
+.field__password-toggle {
+  position: absolute;
+  top: 50%;
+  right: 14px;
+  transform: translateY(-50%);
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}

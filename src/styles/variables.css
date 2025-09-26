@@ -1,0 +1,25 @@
+:root {
+  --color-white: #FFFFFF;
+
+  --color-grey-100: #F2F2F2;
+  --color-grey-200: #E4E4E4;
+  --color-grey-300: #CCCCCC;
+  --color-grey-400: #A4A4A4;
+  --color-grey-500: #5B5B5B;
+  --color-grey-600: #333333;
+
+  --color-primary: #1A1A1A;
+
+  --font-family: 'Roboto', sans-serif;
+
+  --border: 1px solid var(--color-grey-200);
+  --border-radius-xs: 6px;
+  --border-radius-s: 8px;
+  --border-radius-m: 16px;
+
+  --box-shadow: 0 10px 60px rgba(0, 0, 0, 0.1);
+
+  --input-height: 52px;
+
+  --transition-duration: 0.2s;
+}
