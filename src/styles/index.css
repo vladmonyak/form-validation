@@ -1,10 +1,10 @@
-@import 'normalize.css';
-@import 'fonts.css';
-@import 'variables.css';
-@import 'globals.css';
-@import 'utils.css';
+@import "normalize.css";
+@import "fonts.css";
+@import "variables.css";
+@import "globals.css";
+@import "utils.css";
 
-@import 'components/form.css';
-@import 'components/segmented-button.css';
-@import 'components/field.css';
-@import 'components/button.css';
+@import "components/form.css";
+@import "components/segmented-button.css";
+@import "components/field.css";
+@import "components/button.css";

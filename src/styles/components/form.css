@@ -18,7 +18,7 @@
   color: var(--color-primary);
 }
 
-.form__fields {
+.form__fields-wrapper {
   display: flex;
   flex-direction: column;
   row-gap: 24px;
@@ -47,8 +47,8 @@ input[type="password"]::-moz-password-toggle {
 }
 
 .form__checkbox {
-  appearance: none;
   position: relative;
+  appearance: none;
   flex-shrink: 0;
   width: 18px;
   height: 18px;
@@ -69,15 +69,15 @@ input[type="password"]::-moz-password-toggle {
 
 .form__checkbox::after {
   position: absolute;
+  content: "";
   top: 50%;
   left: 50%;
+  translate: -50% -50%;
   width: 18px;
   height: 18px;
-  content: '';
-  translate: -50% -50%;
   background: url(../../assets/icons/check.svg) center/contain no-repeat;
   opacity: 0;
-  transition: opacity var(--transition-duration);
+  transition-duration: var(--transition-duration);
 }
 
 .form__checkbox:checked::after {
