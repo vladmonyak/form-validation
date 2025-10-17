@@ -11,6 +11,13 @@
   color: var(--color-primary);
 }
 
+.field__error {
+  margin-top: 8px;
+  font-size: 12px;
+  line-height: 16px;
+  color: var(--color-red);
+}
+
 .field__input-group {
   position: relative;
 }

@@ -10,26 +10,28 @@
   <body>
     <h1 class="visually-hidden">User Registration Form</h1>
     <form class="form" method="post" novalidate data-js-form>
-      <h2 class="form__title">Сreate an Account</h2>
+      <h2 class="form__title">Create an Account</h2>
 
       <div class="form__segmented-button segmented-button" data-js-segmented-button>
         <button 
           class="segmented-button__item segmented-button__item--active" 
           type="button"
-          data-js-segmented-button-email
+          data-js-segmented-button-item
+          data-js-segmented-button-item-email
         >
           Email
         </button>
         <button 
           class="segmented-button__item" 
           type="button"
-          data-js-segmented-button-phone
+          data-js-segmented-button-item
+          data-js-segmented-button-item-phone
         >
           Mobile Number
         </button>
       </div>
 
-      <div class="form__fields">
+      <div class="form__fields-wrapper">
         <div class="form__field field" data-js-field-email>
           <label class="field__label" for="email">Email</label>
           <input 
@@ -72,7 +74,7 @@
               data-js-input-password
             />
             <button 
-              class="field__password-toggle" 
+              class="field__password-toggle visually-hidden" 
               type="button" 
               aria-label="Show password"
               title="Show password"
@@ -103,7 +105,7 @@
               data-js-input-confirm-password
             />
             <button 
-              class="field__password-toggle" 
+              class="field__password-toggle visually-hidden" 
               type="button" 
               aria-label="Show password"
               title="Show password"
